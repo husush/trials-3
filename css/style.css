@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#navbar ul li{
+    text-decoration: none;
+    color: white;
+}
+.flex-container{
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.flex-item-1{
+    border-right: solid 2px;
+    background-color:;
+    padding: 40px;
+}
+.flex-item{
+
+    margin-left: 10px;
+    margin-top: 20px;
+}
