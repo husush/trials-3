@@ -12,27 +12,27 @@
 
         
                 <nav id="navbar">
-                  <header id="topic of word here"></header>
+                  <header id="GIT">GIT</header>
                 <div>
-                      <a href="#Git introducton" class="nav-link">Git introduction</a>
+                      <a href="#GIT_INTRODUCTION" class="nav-link">GIT INTRODUCTION</a>
                 </div>
                 <div>
-                     <a href="#GIT NEW FILES" class="nav-link" >GIT NEW FILES</a>
+                     <a href="#GIT_STARTED" class="nav-link" >GIT STARTED</a>
                 </div>
                 <div>
-                    <a href="#GIT STAGING ENVIRONMENT" class="nav-link" >GIT STAGING ENVIRONMENT</a>
+                    <a href="#GIT_STAGING" class="nav-link" >GIT STAGING</a>
                 </div>
                 <div>
-                    <a href="#GIT GIT COMMIT" class="nav-link" >GIT GIT COMMIT</a>
+                    <a href="#GIT_ADD_FILES" class="nav-link" >GIT ADD FILES</a>
                 </div>
                 <div>
-                    <a href="#GIT HELP" class="nav-link" >GIT HELP</a>
+                    <a href="#GIT_COMMIT" class="nav-link" >GIT COMMIT </a>
                 </div>
                 <div>
-                    <a href="#GIT BRANCH" class="nav-link" >GIT BRANCH</a>
+                    <a href="#GIT_BRANCH" class="nav-link" >GIT BRANCH</a>
                 </div>
               <div>
-                <a href="#GIT MERGE" class="nav-link" >GIT MERGE</a>
+                <a href="#GIT_MERGE" class="nav-link" >GIT MERGE</a>
 
           </div>
             </nav>
@@ -40,12 +40,13 @@
   <div class="flex-item">
    <main id="main-doc">
      
-     <section class="main-section" id="GIT NEW FILES"> 
+     <section class="main-section" id="GIT_INTRODUCTION"> 
       <header id="header">
-        <h1>GIT INTRODUCTION</h1>
+        GIT INTRODUCTION
       </header>
-      <h2>what is Git</h2>
+      <h3>what is Git</h3>
       <p>Git is a version control system which lets you track changes you make to your files over time. With Git, you can revert to various states of your files (like a time traveling machine). You can also make a copy of your file, make changes to that copy, and then merge these changes to the original copy.</p>
+      
       <p>For example, you could be working on a website's landing page and discover that you do not like the navigation bar. But at the same time, you might not want to start altering its components because it might get worse.</p>
       <p>With Git, you can create an identical copy of that file and play around with the navigation bar. Then, when you are satisfied with your changes, you can merge the copy to the original file.</p>
       <p>You are not limited to using Git just for source code files – you can also use it to keep track of text files or even images. This means that Git is not just for developers – anyone can find it helpful.</p>
@@ -64,54 +65,83 @@
      </section>
      <section class="main-section" id="GIT_STARTED"> 
       <header id="header">
-        <h1>GIT STARTED</h1>
+        GIT STARTED
       </header>
-      <h2>How to install GIt</h2>
+      <h3>How to install GIt</h3>
       <p>n order to use Git, you have to install it on your computer. To do this, you can download the latest version on the official website. You can download for your operating system from the options given.</p>
       <p>n order to use Git, you have to install it on your computer. To do this, you can download the latest version on the official website. You can download for your operating system from the options given.</p>
       <p>you can download Git for free from the following website: https://www.git-scm.com/</p>
-      <h2>Using Git with Command Line</h2>
+      <h3>Using Git with Command Line</h3>
       <p>To start using Git, we are first going to open up our Command shell.
         For Windows, you can use Git bash, which comes included in Git for Windows. For Mac and Linux you can use the built-in terminal.  
         The first thing we need to do, is to check if Git is properly installed:</p>
-      <h2>Configure Git</h2>
+      <h3>Configure Git</h3>
       <article>
         <p>I will assume that at this point you have installed Git. To verify this, you can run this command on the command line: git --version. This shows you the current version installed on you PC.
-        </p>     
+        </p>  
+        <code>
+        </code>   
         <p>The next thing you'll need to do is to set your username and email address. Git will use this information to identify who made specific changes to files</p>
         <p>To set your username, type and execute these commands: git config --global user.name "YOUR_USERNAME" and git config --global user.email "YOUR_EMAIL". Just make sure to replace "YOUR_USERNAME" and "YOUR_EMAIL" with the values you choose.</p>
       </article>
      </section>
-     <section class="main-section" id="GIT_NEW_FILES"> 
-      <header id="header">GIR NEW FILES</header>
-      <h2>Git Adding New Files</h2>
+     <section class="main-section" id="GIT_STAGING"> 
+      <header id="header">GIT STAGING</header>
+      GIT STAGING
+      <p>A staging step in git allows you to continue making changes to the working directory, and when you decide you wanna interact with version control, it allows you to record changes in small commits.
+        Suppose you have edited three files (a.html, b.html, and c.html). After that you need to commit all the changes so that the changes to a.html and b.html were a single commit, while the changes to c.html were not logically associated with the first two files and were done in a separate commit.</p>
+     </section>
+     <section class="main-section" id="GIT_ADD_FILES"> 
+      <header id="header">GIT ADD FILES</header>
+      Git Adding New Files
       <p>You just created your first local Git repo. But it is empty.
         So let's add some files, or create a new file using your favourite text editor. Then save or move it to the folder you just created.     
         If you want to learn how to create a new file using a text editor, you can visit our HTML tutorial:
         HTML Editors</p>
-      <p></p>
-      <p></p>
-      <article>
-      </article>
+    <code> </code
      </section>
-     <section class="main-section" id="4">
-      <header id="header"></header>
-      <p></p>
-      <p></p>
-      <p></p>
-      <article>
-      </article>
+     <section class="main-section" id="GIT_COMMIT">
+      <header id="header">GIT COMMIT</header>
+      <p>git commit creates a commit, which is like a snapshot of your repository. These commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.</p>
+      <h3>commit shape history</h3>
+      <p>By using commits, you're able to craft history intentionally and safely. You can make commits to different branches, and specify exactly what changes you want to include. Commits are created on the branch that you're currently checked out to (wherever HEAD is pointing) so it's always a good idea to run git status before making a commit, to check that you're checked-out to the branch that you intend to be. Before you commit, you will need to stage any new changes that you'd like to include in the commit using git add [file].  Commits are lightweight SHA hashes, objects within Git. As long as you're working with text files, you won't need to worry about how many files you have, how big they are, or how many commits you make. Git can handle it!</p>
+      <h3>How to Use Git Commit</h3>
+          <code> </code
+      <p>git commit: This starts the commit process, but since it doesn't include a -m flag for the message, your default text editor will be opened for you to create the commit message. If you haven't configured anything, there's a good chance this will be VI or Vim. (To get out, press esc, then :w, and then Enter. :wink:)
+        git commit -m "descriptive commit message": This starts the commit process, and allows you to include the commit message at the same time.
+        git commit -am "descriptive commit message": In addition to including the commit message, this option allows you to skip the staging phase. The addition of -a will automatically stage any files that are already being tracked by Git (changes to files that you've committed before).
+        git commit --amend:</p>
      </section>
-     <section class="main-section" id="5">
-      <header id="header"></header>
-      <p></p>
-      <p></p>
-      <p></p>
-      <article>
-      </article>
+     <section class="main-section" id="GIT_BRANCH">
+      <header id="header">GIT BRANCH
+      </header>
+          <code> </code
+      <p>A branch is a version of the repository that diverges from the main working project. It is a feature available in most modern version control systems. A Git project can have more than one branch. These branches are a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug, you spawn a new branch to summarize your changes. So, it is complex to merge the unstable code with the main code base and also facilitates you to clean up your future history before merging with the main branch.
+      </p>
+      <img src="https://static.javatpoint.com/tutorial/git/images/git-branch.png" alt="branch">
+      <h3>Git master branch</h3>
+          <code> </code
+      <p>
+        The master branch is a default branch in Git. It is instantiated when first commit made on the project. When you make the first commit, you're given a master branch to the starting commit point. When you start making a commit, then master branch pointer automatically moves forward. A repository can have only one master branch.
+      </p>
+      <p>Master branch is the branch in which all the changes eventually get merged back. It can be called as an official working version of your project.
+      </p>
+     </section>
+     <section class="main-section" id="GIT_MERGE">
+      <header id="header">GIT MERGE
+      </header>
+          <code> </code    
+      <h3>Git Merge and Merge Conflict</h3>
+      <p>
+        In Git, the merging is a procedure to connect the forked history. It joins two or more development history together. The git merge command facilitates you to take the data created by git branch and integrate them into a single branch. Git merge will associate a series of commits into one unified history. Generally, git merge is used to combine two branches.
+      </p>
+      <img src="https://static.javatpoint.com/tutorial/git/images/git-merge-and-merge-conflict.png" alt="merge">
+      <p>It is used to maintain distinct lines of development; at some stage, you want to merge the changes in one branch. It is essential to understand how merging works in Git.
+      </p>
+      <p>In the above figure, there are two branches master and feature. We can see that we made some commits in both functionality and master branch, and merge them. It works as a pointer. It will find a common base commit between branches. Once Git finds a shared base commit, it will create a new "merge commit." It combines the changes of each queued merge commit sequence.
+      </p>
      </section>
    </main>
-    </form>
     </div>
   </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
